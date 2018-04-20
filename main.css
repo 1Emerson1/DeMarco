@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+/* General Style Rule */
+p, h3, h4{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+h1#jahbless {
+	text-shadow: 2px 0px #F46A9F;
+	text-transform: capitalize;
+	font-style: italic; 
+	font-weight: 300;
+	color: #215EBC;
+}
+
+footer{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	text-align: center;
+	color: white;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+html {
+	width: 100%;
+	background-image: url(assets/macdemarco.jpg);
+	background-repeat: repeat;
+}
+
+body {
+	width: 60%;
+	max-width: 1000px;
+	min-width: 675px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Dosis', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    width: 95%;
+	margin: auto;
+	margin-bottom: 30px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+img#logo {height: 100%; width: 100%;}
+
+div#stand img{
+	padding: 0 15px;
+	display: block;
+	float: left;
+}
+
+div#stand aside {
+	 float: right;
+	 margin-right: 20px;
+	 margin-left: -10px;
+}
+
+/* Gallery Images Style Rule */
+div#gallery img, figcaption {display:block; margin: 0 auto; text-align:center;}
+div#stand iframe {padding:5px 0; display:block; margin:auto;}
+div#stand h3 {text-align: center;}
+
+div#gallery img#gall:hover {
+	transform: scale(1.2,1.2)
+}
+	
+/* Div Style Rule */
+div.row::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+div[class^="col-"] {float: left;}
+
+div.col-3-4 {width: 75%;}
+div.col-1-4 {width: 25%;}
+div.col-1-2 {width: 50%;}
+div.col-1-5 {width: 20%;}
+div.col-4-5 {width: 80%;}
+
+div#stand, div#gallery {
+	width: 100%;
+	border-radius: 10px;
+	border: 2px solid #666666;
+	background-color: white;
+	margin: 0 0.25em 0 0;
+}
+
+div#blog {
+	width: 73%;
+	border-radius: 10px;
+	border: 2px solid #666666;
+	background-color: white;
+	margin: 0 0.25em 0 0;
+}
+
+div#aside {
+	border-radius: 10px;
+	border: 2px solid #666666;
+	background-color: white;
+}
+
+div#footer {
+	border-radius: 10px;
+	border: 2px solid #666666;
+	background-color: #225DBC;
+	height: 30px;
+	margin: 0.25em 0 0 0;
+}
+
+div#nav {
+	height: 30px;
+	border: 2px solid #666666;
+	border-radius: 10px;
+	background-color: #225DBC;
+	margin: 0 0 0.25em 0;
+}
+	
+#body #blog, #aside {text-align:center; display:block;}
+
+/* Navigation Style Rule */
+ul.topnav {
+	margin-top: 10px;
+	list-style-type: none;
+	display: block;
+}
+
+ul.topnav li {
+	display: block;
+	float: left;
+	width: 25%;
+	text-align: center;
+	margin-top: -11.5px;
+	margin-left: -10px;
+}
+
+ul.topnav li > a {
+	color: white;
+	background-color: #215EBC;
+	text-decoration: none;
+	text-align: center;
+	padding-left: 30%;
+	padding-right: 30%;
+}
+
+ul.topnav li a:hover {background-color: #5C8FE1;}
+
+/* Dropdown Button */
+.dropbtn {
+	color: white;
+	background-color: #225DBC;
+	width: 100%;
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	width: 100%;
+}
+
+.dropdown-content a {
+	display: block;
+	color: white;
+	background-color: #215EBC;
+	text-align: center;
+	text-decoration: none;
+}
+
+.dropdown-content a:hover {background-color: #5C8FE1}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #5C8FE1;}
